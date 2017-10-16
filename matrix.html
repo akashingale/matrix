@@ -1,0 +1,59 @@
+<html>
+<head>
+<!-- <link rel="stylesheet" type="text/css" href="matrix.css"> -->
+</head>
+<body>
+	<div class="matrix">
+		 <table>
+		  <tr>
+		    <th>First value</th>
+		    <th>second value</th>
+		    <th>thired value</th>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="m1" class="user_input" id="m1"></td>
+		    <td><input type="text" name="m2" class="user_input" id="m2"></td>
+		    <td><input type="text" name="m3" class="user_input" id="m3"></td>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="m4" class="user_input" id="m4"></td>
+		    <td><input type="text" name="m5" class="user_input" id="m5"></td>
+		    <td><input type="text" name="m6" class="user_input" id="m6"></td>
+		  </tr>
+		  <tr>
+		    <td><input type="text" name="m7" class="user_input" id="m7"></td>
+		    <td><input type="text" name="m8" class="user_input" id="m8"></td>
+		    <td><input type="text" name="m9" class="user_input" id="m9"></td>
+		  </tr>
+		</table> 
+		<button type="submit" onclick="myfunction()"> submit</button>
+	</div>
+	<script type="text/javascript">
+
+	function myfunction(){
+
+		var a = document.getElementById("m1").value;
+		var b = document.getElementById("m5").value;
+		var c = document.getElementById("m9").value;
+		
+		a.toString();
+		b.toString();
+		c.toString();
+
+
+		var x = document.getElementById("m3").value;
+		var y = document.getElementById("m5").value;
+		var z = document.getElementById("m7").value;
+
+		x.toString();
+		y.toString();
+		z.toString();
+
+		var val = (a+b+c)-(x+y+z);
+		console.log(val);
+	}
+
+	</script>
+</body>
+
+</html>
